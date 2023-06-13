@@ -2,7 +2,7 @@
  * backend URL
  * 
  */
-setURL('https://danielbergmann.dev/Projekte/Join/smallest_backend_ever')
+setURL('https://daniel-bergmann.developerakademie.net/Portfolio/Join/smallest_backend_ever')
 
 /**
  * userList = list of our contacts/users
