@@ -509,6 +509,13 @@
   white-space: nowrap;
 }
 
+.board-task-slide-in-edit-delete-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .board-task-slide-in-editbutton {
   position: sticky;
   display: flex;
@@ -525,6 +532,32 @@
 }
 
 .board-task-slide-in-editbutton:hover {
+  background: #005dff;
+  transition: 80ms all ease-in-out;
+}
+
+.imgDeleteButton{
+  
+}
+
+.board-task-slide-in-deletebutton {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 57px;
+  min-height: 57px;
+  left: 525px;
+  bottom: 0;
+  background: #4589ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 80ms all ease-in-out;
+
+  
+}
+
+.board-task-slide-in-deletebutton:hover {
   background: #005dff;
   transition: 80ms all ease-in-out;
 }
