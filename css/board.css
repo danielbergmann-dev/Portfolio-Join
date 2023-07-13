@@ -536,8 +536,13 @@
   transition: 80ms all ease-in-out;
 }
 
-.imgDeleteButton{
-  
+.edit-delete-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fill-available;
+
 }
 
 .board-task-slide-in-deletebutton {
@@ -553,6 +558,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 80ms all ease-in-out;
+  margin-right: 55px;
 
   
 }

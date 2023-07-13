@@ -167,12 +167,14 @@ function insertBoardTaskSlideInAssignedContactsIteration(i) {
 
     contactContainer.innerHTML += /*html*/ `
      
+    <div class="edit-delete-div">
     <div onclick="boardTaskSlideInEditTask(${i})" class="board-task-slide-in-editbutton">
             <img src="assets/img/editButton.svg" alt="">
         </div>
 
-        <div onclick="boardTaskSlideInEditTask(${i})" class="board-task-slide-in-deletebutton">
+        <div onclick="deleteCategory(${i})" class="board-task-slide-in-deletebutton">
         <img class="imgDeleteButton"src="assets/img/deleteButton.svg" alt="">
+    </div>
     </div>
    
         `;
