@@ -84,13 +84,11 @@ async function pushTaskToBackend() {
  */
 async function deleteCategory(i) {
     if (i >= 0 && i < taskList.length) {
-      const deletedTask = taskList.splice(i, 1)[0]; // Entfernt den Task mit dem angegebenen Index
-      await backend.setItem("tasks", JSON.stringify(taskList)); // Aktualisiert die Aufgabenliste im Backend
-      console.log("Task deleted:", deletedTask);
-      // Weitere Aktionen nach dem Löschen des Tasks
+      const deletedTask = taskList.splice(i, 1)[0]; // deletedTask from backend
+      await backend.setItem("tasks", JSON.stringify(taskList)); //refresh tasks from backend
       await initBackend();
-      insertBoard();
-      toggleTaskBoardTask();
+      await insertBoard();
+      await toggleTaskBoardTask();
     }
   }
   
