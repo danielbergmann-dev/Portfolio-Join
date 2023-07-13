@@ -27,7 +27,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         header("Access-Control-Allow-Origin: *");
 
         $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  noreply@developerakademie.com";
+        $headers = "From:  noreply@danielbergmann.dev";
 
         $message .= "Hello!\n For changing your password click on the link below! \n 
         https://danielbergmann.dev/Projekte/Join/change_password.html?${recipient}" . $_POST['message'];

@@ -324,6 +324,7 @@ function returnToLoginPage() {
   } else if (window.location.href.includes("index.html")) {
     returnToLoginPageCSSHTML();
     setElementsFromLocalStorage();
+    console.log("index");
   }
 }
 
