@@ -253,4 +253,3 @@ async function pushBoardTaskValuesToClipboard(title) {
     addTaskFillSlideInMenu()
     clearTaskClipboard()
 }
-
