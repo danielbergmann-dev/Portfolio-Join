@@ -3,7 +3,7 @@
  *
  */
 setURL(
-  "https://daniel-bergmann.developerakademie.net/Portfolio/Join/smallest_backend_ever"
+  "https://danielbergmann.dev/Projekte/Join/smallest_backend_ever"
 );
 
 /**

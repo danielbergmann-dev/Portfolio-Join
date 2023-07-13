@@ -2,7 +2,7 @@
 ########### CONFIG ###############
 
 $recipient = $_POST['recipient'];
-$redirect = 'https://daniel-bergmann.developerakademie.net/Portfolio/Join/index.html';
+$redirect = 'https://danielbergmann.dev/Projekte/Join/';
 
 ########### CONFIG END ###########
 ?>
@@ -30,7 +30,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $headers = "From:  noreply@developerakademie.com";
 
         $message .= "Hello!\n For changing your password click on the link below! \n 
-        https://daniel-bergmann.developerakademie.net/Portfolio/Join/change_password.html?${recipient}" . $_POST['message'];
+        https://danielbergmann.dev/Projekte/Join/change_password.html?${recipient}" . $_POST['message'];
 
         if (mail($recipient, $subject, $message, $headers)) {
             sleep(1);
