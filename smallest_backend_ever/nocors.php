@@ -1,11 +1,17 @@
 <?php
 cors();
-echo file_get_contents($_GET['json'] . '.json');
 
+// Überprüfen, ob der 'json'-Parameter vorhanden ist
+if (isset($_GET['json']) && file_exists($_GET['json'] . '.json')) {
+    header('Content-Type: application/json');
+    echo file_get_contents($_GET['json'] . '.json');
+} else {
+    // Angemessene Fehlermeldung zurückgeben
+    header('Content-Type: application/json');
+    echo json_encode(["error" => "Datei nicht gefunden oder ungültiger Parameter"]);
+}
 
-
-function cors()
-{
+function cors() {
 
     // Allow from any origin
     if (isset($_SERVER['HTTP_ORIGIN'])) {

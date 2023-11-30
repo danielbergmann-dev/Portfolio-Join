@@ -32,7 +32,7 @@ function forgotPasswordInputHTML() {
 
     return /*html*/ `
           <div >
-              <form action="https://daniel-bergmann.developerakademie.net/Portfolio/Join/send_mail.php" method="POST" id="resetPassword">
+              <form action="https://danielbergmann.dev/Projekte/Join/send_mail.php" method="POST" id="resetPassword">
               <div class="log-in-input-field"> 
                   <input type="email" placeholder="Email" required id="logInEmail" name="recipient" value="${recipient}">
                   <img src="./assets/img/login-email.svg">
